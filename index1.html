@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTTP续</title>
+	
+	
+	</head>
+	<body>
+		<h1>HTTP常用的的标签</h1>
+		<h2>1:<code>&lt;iframe&gt;</code></h2>
+		<p1>在一个页面里嵌套另一个页面,例如：<code>&lt;iframe src="https://www.baidu.com" name="xxx"&gt;</code><code>&lt;/iframe&gt;</code>点击xxx则跳转到百度首页。</p1>
+		<h2>2:<code>&lt;a&gt;</code></h2>	
+		<p1><code>&lt;a&gt;</code>跳转页面（HTTP GET请求），标签中target有4个属性，_blank表示在新的页面打开，_self表示在当前页面打开，_parent表示在父级页面打开，_top表示在顶层页面打开。</br>
+		其中标签中的herf可以等于#，相对路径，无协议的域名，问号和伪协议；分别对应滑到顶部，跳转到相对路径，跳转到域名，跳转到问号和无操作。</br>
+		</p1>
+		<h2>3:<code>&lt;form&gt;</code></h2>
+		<p1>作用是跳转页面，发起POST请求，或GET请求（没什么用）,注意：file协议是不支持POST请求的。<code>&lt;form&gt;</code>表单里必须有一个提交按钮。</p1>
+		<h2>4:<code>&lt;input&gt;</code></h2>
+		<p1>如果form里面只有一个button，没有input,则<code>&lt;button&gt;</code>会升级为提交按钮；如果有input,那么他的typle应该=submit,才能有提交按钮。<code>&lt;input&gt;</code>中type属性为checkbox时为多选框；属性为radio时为单选框，但他们的name必须相同。</p1>
+		<h2>5:<code>&lt;select&gt;</code></h2>
+		<p1>为下拉列表。</p1>
+		<h2>6:<code>&lt;table&gt;</code></h2>
+		<p1>标签用于展示数据，规定里面只能有<code>&lt;thead&gt;</code><code>&lt;tbody&gt;</code><code>&lt;tfoot&gt;</code>3个子标签，但<code>&lt;colgroup&gt;</code>也可以，不常用。</br></p1>
+		thead表示表头，tbody表示内容，tfoot表示表底。
+	<link rel="stylesheet" href="./css/style.css">
+	</body>
+</html>
